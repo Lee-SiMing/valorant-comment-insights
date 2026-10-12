@@ -1,4 +1,4 @@
-# 无畏契约新皮肤评论洞察 Skill
+# 无畏契约新皮肤 B站评论自动分析
 
 给 Codex 使用的中文 Skill：读取包含 B 站视频 URL 的 TXT，打开浏览器供用户登录，采集《无畏契约》新皮肤演示视频下的评论，再按**积极、消极、中立**三分法分析玩家反馈。报告回答三个问题：各类评价占比、认可与反对的原因、针对皮肤本身的可改进空间。
 
@@ -47,6 +47,5 @@ python -m venv .venv
 
 ## 来源与许可
 
-登录流程保留了用户提供的 B 站爬虫代码，经适配后放在 `vendor/bilibili-comment-scraper/`；该部分遵循其随附的 [MIT License](vendor/bilibili-comment-scraper/LICENSE)，原版权标注为 `Copyright (c) 2023 Ghauster`。其余项目代码及文档采用仓库根目录的 [MIT License](LICENSE)。武器与皮肤名称快照来自 [Valorant-API](https://valorant-api.com/)，来源、抓取时间和适用范围记录在 [catalog/source_metadata.json](catalog/source_metadata.json)。
-
+本项目的 B 站评论爬虫代码基于 [Ghauster/BilibiliCommentScraper](https://github.com/Ghauster/BilibiliCommentScraper) 改造，原作者为 Ghauster。适配后的代码放在 `vendor/bilibili-comment-scraper/`，沿用原项目随附的 [MIT License](vendor/bilibili-comment-scraper/LICENSE) 和 `Copyright (c) 2023 Ghauster` 版权声明。评论分析流程、知识库与 Agent Skill 是本项目在采集模块之上构建的部分。其余项目代码及文档采用仓库根目录的 [MIT License](LICENSE)。武器与皮肤名称快照来自 [Valorant-API](https://valorant-api.com/)，来源、抓取时间和适用范围记录在 [catalog/source_metadata.json](catalog/source_metadata.json)。
 
