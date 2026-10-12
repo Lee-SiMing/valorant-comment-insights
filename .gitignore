@@ -1,0 +1,14 @@
+local_runs/
+reports/
+.venv/
+.python_deps/
+__pycache__/
+*.py[cod]
+**/cookies.pkl
+**/progress.txt
+**/video_errorlist.txt
+**/tmp*/
+.env
+.env.*
+*.log
+
